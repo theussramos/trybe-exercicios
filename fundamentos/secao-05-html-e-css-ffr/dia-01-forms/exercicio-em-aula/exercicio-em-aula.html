@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,50 @@
     <link rel="stylesheet" href="style.css">
     <title>Cadastro de Palestra</title>
 </head>
+
 <body>
     <header class="abertura">
         <h1>Submeter Palestra</h1>
         <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
     </header>
-    
+
+    <form action="" method="get">
+        <div class="informacoes">
+            <div class="conteudo">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" name="nome-completo" id="full-name" autocomplete="off">
+            </div>
+            <div class="conteudo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+            </div>
+            
+            <fieldset>
+                <legend>Tipo Palestra</legend>
+
+                <input type="radio" name="opcoes-palestras" id="opc1" value="palco-principal">
+                <label for="opc1">Palco Principal</label>
+
+                <input type="radio" name="opcoes-palestras" id="opc2" value="palco-secundario">
+                <label for="opc2">Palco Secondário</label>
+
+                <input type="radio" name="opcoes-palestras" id="opc3" value="workshop">
+                <label for="opc3">Workshop</label>
+
+            </fieldset>
+
+        </div>
+
+
+
+
+
+        <button type="submit">enviar</button>
+
+
+    </form>
+
     <script src="script.js"></script>
 </body>
+
 </html>

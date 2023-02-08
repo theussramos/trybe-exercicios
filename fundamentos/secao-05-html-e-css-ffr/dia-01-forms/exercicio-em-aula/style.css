@@ -10,14 +10,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.abertura {
-    background-color: rgb(238, 238, 238);
-    border: 1px rgb(173, 173, 173) solid;
+
+
+.abertura, .informacoes {
+    background-color: rgb(245, 245, 245);
+    border: 1px rgba(173, 173, 173, 0.507) solid;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    width: 80%;
-    margin: 40px;
+    width: 90%;
+    margin: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.abertura h1 {
+    margin-bottom: 15px;
+}
+
+.conteudo {
+    margin: 20px;
+}
+
+.informacoes input[type='text'], input[type='email'] {
+    width: 100%;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px  rgba(112, 112, 112, 0.507) solid;
+
 }
