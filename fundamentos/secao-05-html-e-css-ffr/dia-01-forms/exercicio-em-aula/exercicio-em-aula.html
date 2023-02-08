@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Palestra</title>
+</head>
+
+<body>
+    <header class="abertura">
+        <h1>Submeter Palestra</h1>
+        <p><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+    </header>
+
+    <form action="" method="get">
+
+        <div class="informacoes">
+
+            <div class="conteudo">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" name="nome-completo" id="full-name" autocomplete="off">
+            </div>
+            <div class="conteudo">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+            </div>
+
+
+            <div class="conteudo">
+                <fieldset id="tipo-palestra">
+                    <legend>Tipo Palestra</legend>
+
+                    <input type="radio" name="opcoes-palestras" id="opc1" value="palco-principal" checked>
+                    <label for="opc1">Palco Principal</label>
+
+                    <input type="radio" name="opcoes-palestras" id="opc2" value="palco-secundario">
+                    <label for="opc2">Palco Secondário</label>
+
+                    <input type="radio" name="opcoes-palestras" id="opc3" value="workshop">
+                    <label for="opc3">Workshop</label>
+
+                </fieldset>
+
+                <div class="conteudo">
+                    <label for="camiseta">Tamanho da camiseta: </label>
+                    <select name="camiseta" id="camiseta-option">
+                        <option value="ss">PP</option>
+                        <option value="s">P</option>
+                        <option value="m">M</option>
+                        <option value="l">G</option>
+                        <option value="xl">GG</option>
+
+                    </select>
+
+                </div>
+                <div class="conteudo">
+                    <label for="resumo">Resumo:</label>
+                    <textarea name="resumo" id="resumo" maxlength="500"
+                        placeholder="Escreva seu resumo em 500 Caracteres"></textarea>
+                </div>
+                <div class="conteudo">
+                    <input type="checkbox" name="disponibilidade" id="disponibilidade">
+                    <label for="disponibilidade">Estou disponível para a data do evento!</label>
+                </div>
+            </div>
+            <button type="submit" id="button">enviar</button>
+
+            <!-- botões de outras duas formas
+            <input type="button" value="">
+            <input type="submit" value=""> -->
+        </div>
+
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
