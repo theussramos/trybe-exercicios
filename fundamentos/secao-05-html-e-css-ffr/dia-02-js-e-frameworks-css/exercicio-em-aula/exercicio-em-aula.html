@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>Cadastro de Palestra</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <h1 class="display-1">Submeter Palestra</h1>
+        <p class="lead"><em>Quer palestrar na nossa conferência? Preencha o formulário!</em></p>
+    </header>
+    <hr>
+    <form action="" method="get">
+
+        <div>
+            <label for="full-name" class="form-label">Nome Completo:</label>
+            <input type="text" name="nome-completo" id="full-name" autocomplete="off" class="form-control">
+        </div>
+        <div>
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" name="email" id="email" autocomplete="off" class="form-control">
+        </div>
+
+        <div>
+
+            <div>Tipo Palestra</div>
+            <div class="form-check">
+                <input type="radio" name="opcoes-palestras" id="opc1" value="palco-principal" class="form-check-input"
+                    checked>
+                <label for="opc1" class="form-check-label">Palco Principal</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="opcoes-palestras" id="opc2" value="palco-secundario" class="form-check-input">
+                <label for="opc2" class="form-check-label">Palco Secondário</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="opcoes-palestras" id="opc3" value="workshop" class="form-check-input">
+                <label for="opc3" class="form-check-label">Workshop</label>
+            </div>
+
+            <div>
+                <label for="camiseta" class="form-label">Tamanho da camiseta: </label>
+                <select name="camiseta" id="camiseta-option" class="form-select">
+                    <option value="ss">PP</option>
+                    <option value="s">P</option>
+                    <option value="m">M</option>
+                    <option value="l">G</option>
+                    <option value="xl">GG</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="resumo" class="form-label" class="form-label">Resumo:</label>
+                <textarea name="resumo" id="resumo" maxlength="500" placeholder="Escreva seu resumo em 500 Caracteres"
+                    class="form-control"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="disponibilidade" id="disponibilidade" class="form-check-input">
+                <label for="disponibilidade" class="form-check-label">Estou disponível para a data do evento!</label>
+            </div>
+        </div>
+        <div class="container text-center">
+            <button type="submit" id="button" class="btn btn-outline-success">enviar</button>
+            <!-- botões de outras duas formas
+            <input type="button" value="">
+            <input type="submit" value=""> -->
+        </div>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
