@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
     <title>Cadastro de Palestra</title>
 </head>
 
@@ -45,8 +47,8 @@
             </div>
 
             <div>
-                <label for="camiseta">Tamanho da camiseta: </label>
-                <select name="camiseta" id="camiseta-option">
+                <label for="camiseta" class="form-label">Tamanho da camiseta: </label>
+                <select name="camiseta" id="camiseta-option" class="form-select">
                     <option value="ss">PP</option>
                     <option value="s">P</option>
                     <option value="m">M</option>
@@ -56,19 +58,21 @@
 
             </div>
             <div>
-                <label for="resumo" class="form-label">Resumo:</label>
+                <label for="resumo" class="form-label" class="form-label">Resumo:</label>
                 <textarea name="resumo" id="resumo" maxlength="500" placeholder="Escreva seu resumo em 500 Caracteres"
                     class="form-control"></textarea>
             </div>
             <div>
-                <input type="checkbox" name="disponibilidade" id="disponibilidade">
-                <label for="disponibilidade">Estou disponível para a data do evento!</label>
+                <input type="checkbox" name="disponibilidade" id="disponibilidade" class="form-check-input">
+                <label for="disponibilidade" class="form-check-label">Estou disponível para a data do evento!</label>
             </div>
         </div>
-        <button type="submit" id="button">enviar</button>
-        <!-- botões de outras duas formas
+        <div class="container text-center">
+            <button type="submit" id="button" class="btn btn-outline-success">enviar</button>
+            <!-- botões de outras duas formas
             <input type="button" value="">
             <input type="submit" value=""> -->
+        </div>
         </div>
 
     </form>
