@@ -20,21 +20,22 @@
   .logo-container {
     display: flex;
     justify-content: center;
+    flex-basis: 268px;
   }
   
   .menu-container {
     display: flex;
     width: 100%;
+    flex: 1 500px;
     justify-content: space-around;
   }
   
   .menu-container ul {
     display: flex;
     justify-content: space-around;
-    width: 30%;
-    align-items: end;
-    align-content: flex-start;
-    margin-left: 800px;
+    width: 100%;
+    align-self: center;
+    
   }
   
   .menu-container li {
@@ -54,11 +55,11 @@
   .movie-container {
     display: flex;
     flex-direction: column;
-    flex: 5 0 700px;
+    flex-grow: 10;
   }
   
   .movie-container h2 {
-    margin-top: 50px;
+    margin-top: 40px 0;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -88,14 +89,10 @@
     align-self: center;
     align-items: center;
   }
-  
-  .aside-container h3 {
-    margin-bottom: 60px;
-    text-align: center;
-  }
 
-  .aside-container h4 {
-    margin-bottom: 5px;
+  
+  .aside-container h3, h4 {
+    margin-bottom: 10px;
     text-align: center;
   }
   
