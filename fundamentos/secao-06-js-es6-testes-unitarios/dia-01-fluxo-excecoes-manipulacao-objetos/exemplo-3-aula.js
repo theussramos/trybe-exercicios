@@ -1,18 +1,18 @@
-const customer = {
-    firstName: 'Roberto',
-    age: 22,
-    job: 'Teacher',
-  };
+// const customer = {
+//     firstName: 'Roberto',
+//     age: 22,
+//     job: 'Teacher',
+//   };
   
-  let newKey = 'lastName';
-  const lastName = 'Ferreira';
+//   let newKey = 'lastName';
+//   const lastName = 'Ferreira';
   
-  const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
-    objeto[novaPropriedade] = valor;
-  };
+//   const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
+//     objeto[novaPropriedade] = valor;
+//   };
   
-  adicionaPropriedade(customer, newKey, lastName);
-  console.log(customer);
+//   adicionaPropriedade(customer, newKey, lastName);
+//   console.log(customer);
 
 
 
