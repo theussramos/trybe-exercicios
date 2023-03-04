@@ -171,14 +171,14 @@
   
 //   // Situação em que usar o operador ternário não faz muito sentido:
 //   const checkIfElse = (fruit) => {
-//     if (fruit === `maçã`) {
-//       return `Essa fruta é vermelha`;
-//     } else if (fruit === `banana`) {
-//       return `Esta fruta é amarela`;
-//     } else {
-//       return `Não sei a cor`;
-//     }
-//   };
+    if (fruit === `maçã`) {
+      return `Essa fruta é vermelha`;
+    } else if (fruit === `banana`) {
+      return `Esta fruta é amarela`;
+    } else {
+      return `Não sei a cor`;
+    }
+  };
   
 //   const checkTernary = (fruit === `maçã`) ? `Essa fruta é vermelha` 
 //     : ((fruit === `banana`) ? `Esta fruta é amarela` : `Não sei a cor`);
