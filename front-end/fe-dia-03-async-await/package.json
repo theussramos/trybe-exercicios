@@ -1,0 +1,20 @@
+{
+  "name": "fe-dia-03-async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
+}
