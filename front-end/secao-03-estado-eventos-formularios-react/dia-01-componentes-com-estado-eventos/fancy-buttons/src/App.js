@@ -5,17 +5,19 @@ class App extends React.Component {
   constructor() {
     super()
     this.handleButtonOne = this.handleButtonOne.bind(this)
-    console.log('componente sendo construído');
+    this.state = {
+      numberClicks: 0
+    }
   }
   handleButtonOne() {
-    console.log(this);
-    console.log('clicou botão 1');
+    this.setState((estadoAnterior, _props) => ({
+      numberClicks: estadoAnterior.numberClicks + 1
+    }))
   }
   render() {
+    console.log(this);
     return (
-    <div>
-      <button onClick={ this.handleButtonOne }>Botão 1</button>
-    </div>
+      <button onClick={ this.handleButtonOne }>{this.state.numberClicks}</button>
       )
   }
 }
