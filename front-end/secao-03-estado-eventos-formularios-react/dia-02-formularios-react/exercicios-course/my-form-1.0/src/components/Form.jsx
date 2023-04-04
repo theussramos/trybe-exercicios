@@ -44,7 +44,6 @@ class Form extends Component {
                   <option value="underage">Menor que 18</option>
                 </select>
               </label>
-
               <label htmlFor='anecdote'>
                 Anedota:
                 <textarea id='anecdote' name='anecdote'></textarea>
