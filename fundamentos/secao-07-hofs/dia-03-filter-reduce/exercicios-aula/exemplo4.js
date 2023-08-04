@@ -65,7 +65,7 @@ const estudantes = [
       idade: 14,
       turno: 'Manhã',
       materias: [
-        { name: 'Matemática', nota: 80 },
+        { name: 'Geometria', nota: 80 },
         { name: 'Português', nota: 82 },
         { name: 'Química', nota: 79 },
         { name: 'Biologia', nota: 75 },
